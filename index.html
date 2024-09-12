@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dialogflow Bot Integration</title>
+    <link rel="stylesheet" href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css">
+    <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
+    <style>
+        body {
+            font-family: 'Google Sans', sans-serif;
+            background: linear-gradient(to right, #FFC107, #8BC34A);
+            color: #fff;
+            
+            padding: 50px;
+        }
+        
+        h1 {
+            font-size: 3em;
+            color: #FF5722;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        p {
+            font-size: 1.5em;
+            color: #FFEB3B;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+        }
+
+        df-messenger {
+            z-index: 999;
+            position: fixed;
+            --df-messenger-font-color: #000;
+            --df-messenger-font-family: 'Google Sans';
+            --df-messenger-chat-background: #FFEBEE;
+            --df-messenger-message-user-background: #BBDEFB;
+            --df-messenger-message-bot-background: #FFCDD2;
+            bottom: 16px;
+            right: 16px;
+        }
+
+        /* Additional styles for the chat bubble */
+        df-messenger-chat-bubble {
+            --df-messenger-bubble-color: #673AB7;
+            --df-messenger-bubble-background: #FFC107;
+        }
+
+        /* Button hover effect */
+        button:hover {
+            background-color: #FFEB3B;
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to DFCC Compliance Bot</h1>
+    <p>Interact with the bot in the bottom-right corner.</p>
+
+    <df-messenger
+        project-id="tokyo-analyst-431809-n3"
+        agent-id="e593549a-ca6e-4b0b-b2b9-b09c0bd7430f"
+        language-code="en"
+        max-query-length="-1"
+        allow-feedback="all">
+        <df-messenger-chat-bubble chat-title="DFCC Compliance Bot101"></df-messenger-chat-bubble>
+    </df-messenger>
+</body>
+</html>
