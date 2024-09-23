@@ -36,6 +36,8 @@
             --df-messenger-message-bot-background: #FFCDD2;
             bottom: 16px;
             right: 16px;
+            width: 500px; /* Increased width */
+            height: 650px; /* Increased height */
         }
 
         /* Additional styles for the chat bubble */
@@ -64,6 +66,11 @@
             p {
                 font-size: 1.2em;
             }
+            
+            df-messenger {
+                width: 400px; /* Adjust size for tablet */
+                height: 550px;
+            }
         }
 
         @media (max-width: 480px) {
@@ -81,6 +88,8 @@
             }
 
             df-messenger {
+                width: 350px; /* Adjust size for mobile */
+                height: 500px;
                 bottom: 10px;
                 right: 10px;
             }
