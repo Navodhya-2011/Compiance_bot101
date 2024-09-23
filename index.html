@@ -11,7 +11,6 @@
             font-family: 'Google Sans', sans-serif;
             background: linear-gradient(to right, #FFC107, #8BC34A);
             color: #fff;
-            
             padding: 50px;
         }
         
@@ -49,6 +48,42 @@
         button:hover {
             background-color: #FFEB3B;
             color: #000;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            body {
+                padding: 20px;
+                font-size: 0.9em;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+            
+            p {
+                font-size: 1.2em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 10px;
+                font-size: 0.8em;
+            }
+            
+            h1 {
+                font-size: 1.5em;
+            }
+            
+            p {
+                font-size: 1em;
+            }
+
+            df-messenger {
+                bottom: 10px;
+                right: 10px;
+            }
         }
     </style>
 </head>
