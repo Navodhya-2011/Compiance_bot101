@@ -10,21 +10,22 @@
     <style>
         body {
             font-family: 'Google Sans', sans-serif;
-            background: linear-gradient(to right, #E5E5E5, #FF0000);
-            color: #000;
+            background: linear-gradient(to right, #E5E5E5, #FF0000); /* Red to white gradient background */
+            color: #000; /* Black text for better readability on lighter background */
             padding: 50px;
         }
 
+        
         h1 {
             font-size: 3em;
-            color: #000000;
+            color: #000000; /* Yellow for contrast */
             text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
             margin-left: 100px;
-        }
+        }        
 
         p {
             font-size: 1.5em;
-            color: #FFFFFF;
+            color: #FFFFFF; /* Lighter yellow */
             text-shadow: 2px 3px black;
             margin-left: 100px;
         }
@@ -44,24 +45,25 @@
             --df-messenger-font-color: #000;
             --df-messenger-font-family: 'Google Sans';
             --df-messenger-chat-background: #FFEBEE;
-            --df-messenger-message-user-background: #F8BBD0;
-            --df-messenger-message-bot-background: #FFCDD2;
+            --df-messenger-message-user-background: #F8BBD0; /* Light pink */
+            --df-messenger-message-bot-background: #FFCDD2; /* Slightly darker pink */
             bottom: 16px;
             right: 16px;
-            height: 700px; /* Set height */
-            width: 1000px; /* Set width */
         }
 
+        /* Chat bubble colors */
         df-messenger-chat-bubble {
-            --df-messenger-bubble-color: #FFC107;
-            --df-messenger-bubble-background: #B71C1C;
+            --df-messenger-bubble-color: #FFC107; /* Yellow bubble text */
+            --df-messenger-bubble-background: #B71C1C; /* Dark red background */
         }
 
+        /* Button hover effect */
         button:hover {
             background-color: #FFEB3B;
             color: #000;
         }
 
+        /* Responsive adjustments */
         @media (max-width: 1024px) {
             body {
                 padding: 20px;
@@ -95,9 +97,8 @@
             df-messenger {
                 bottom: 10px;
                 right: 10px;
-                height: 500px; /* Adjusted for smaller screens */
-                width: 400px; /* Adjusted for smaller screens */
             }
+            
         }
     </style>
 </head>
@@ -106,7 +107,7 @@
     <h1>Welcome to DFCC Compliance Bot</h1>
     <p>Interact with the bot in the bottom-right corner.</p>
 
-    <img src="3156786-removebg.png" height="600px" width="600px" class="img3">
+    <img src = "3156786-removebg.png" height="600px" width="600px" class = "img3">
 
     <df-messenger
         project-id="tokyo-analyst-431809-n3"
