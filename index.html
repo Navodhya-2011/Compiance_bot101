@@ -38,10 +38,14 @@
         .img3 {
             margin-left: 100px;
         }
+        .bot {
+            display: flex;
+            justify-content: center;
+        }
 
         df-messenger {
             z-index: 999;
-            position: absolute;
+/*             position: absolute; */
             --df-messenger-font-color: #000;
             --df-messenger-font-family: 'Google Sans';
             --df-messenger-chat-background: #FFEBEE;
@@ -109,7 +113,7 @@
     <p>Interact with the bot in the bottom-right corner.</p>
 
     <img src = "3156786-removebg.png" height="600px" width="600px" class = "img3">
-
+    <div class="bot"> 
     <df-messenger
         project-id="tokyo-analyst-431809-n3"
         agent-id="e593549a-ca6e-4b0b-b2b9-b09c0bd7430f"
@@ -118,5 +122,6 @@
         allow-feedback="all">
         <df-messenger-chat-bubble chat-title="DFCC Compliance Bot101"></df-messenger-chat-bubble>
     </df-messenger>
+        </div>
 </body>
 </html>
