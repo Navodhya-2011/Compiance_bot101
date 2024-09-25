@@ -15,7 +15,6 @@
             padding: 50px;
         }
 
-        
         h1 {
             font-size: 3em;
             color: #000000; /* Yellow for contrast */
@@ -38,10 +37,6 @@
         .img3 {
             margin-left: 100px;
         }
-/*         .bot {
-            display: flex;
-            justify-content: center;
-        } */
 
         df-messenger {
             z-index: 999;
@@ -53,37 +48,58 @@
             --df-messenger-message-bot-background: #FFCDD2; /* Slightly darker pink */
             bottom: 16px;
             right: 16px;
-         
-/*             margin-left: 2000px; */
         }
 
-        /* Chat bubble colors */
         df-messenger-chat-bubble {
             --df-messenger-bubble-color: #FFC107; /* Yellow bubble text */
             --df-messenger-bubble-background: #B71C1C; /* Dark red background */
         }
 
-        /* Button hover effect */
         button:hover {
             background-color: #FFEB3B;
             color: #000;
         }
 
-        /* Responsive adjustments */
+        /* Media Queries for different screen sizes */
         @media (max-width: 1024px) {
             body {
                 padding: 20px;
                 font-size: 0.9em;
             }
-            
             h1 {
-                font-size: 2em;
+                font-size: 2.5em;
             }
-            
             p {
                 font-size: 1.2em;
             }
-          
+            .img2 {
+                width: 150px;
+            }
+            .img3 {
+                width: 400px;
+                height: auto;
+            }
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+                font-size: 0.85em;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            p {
+                font-size: 1.1em;
+            }
+            .img2 {
+                width: 130px;
+            }
+            .img3 {
+                width: 300px;
+                height: auto;
+                margin-left: 50px;
+            }
         }
 
         @media (max-width: 480px) {
@@ -91,46 +107,72 @@
                 padding: 10px;
                 font-size: 0.8em;
             }
-            
             h1 {
                 font-size: 1.5em;
+                margin-left: 50px;
             }
-            
             p {
                 font-size: 1em;
+                margin-left: 50px;
             }
-
+            .img2 {
+                width: 100px;
+            }
+            .img3 {
+                width: 250px;
+                height: auto;
+                margin-left: 50px;
+            }
             df-messenger {
                 bottom: 10px;
                 right: 10px;
             }
-            
         }
 
-#df-chat-wrappe
-        {
-
-       width:200px;
-            height:200px;
-            
+        @media (max-width: 360px) {
+            body {
+                padding: 5px;
+                font-size: 0.75em;
+            }
+            h1 {
+                font-size: 1.3em;
+                margin-left: 30px;
+            }
+            p {
+                font-size: 0.9em;
+                margin-left: 30px;
+            }
+            .img2 {
+                width: 80px;
+            }
+            .img3 {
+                width: 200px;
+                height: auto;
+                margin-left: 30px;
+            }
+            df-messenger {
+                bottom: 5px;
+                right: 5px;
+            }
         }
     </style>
 </head>
 <body>
-    <img src="logo-dfccbank.png"  class="img2" alt="DFCC Bank Logo">
+    <img src="logo-dfccbank.png" class="img2" alt="DFCC Bank Logo">
     <h1>Welcome to DFCC Compliance Bot</h1>
     <p>Interact with the bot in the bottom-right corner.</p>
 
-    <img src = "3156786-removebg.png" height="600px" width="600px" class = "img3">
+    <img src="3156786-removebg.png" height="600px" width="600px" class="img3" alt="Compliance Bot Image">
+    
     <div class="bot"> 
-    <df-messenger
-        project-id="tokyo-analyst-431809-n3"
-        agent-id="e593549a-ca6e-4b0b-b2b9-b09c0bd7430f"
-        language-code="en"
-        max-query-length="-1"
-        allow-feedback="all">
-        <df-messenger-chat-bubble chat-title="DFCC Compliance Bot101"></df-messenger-chat-bubble>
-    </df-messenger>
-        </div>
+        <df-messenger
+            project-id="tokyo-analyst-431809-n3"
+            agent-id="e593549a-ca6e-4b0b-b2b9-b09c0bd7430f"
+            language-code="en"
+            max-query-length="-1"
+            allow-feedback="all">
+            <df-messenger-chat-bubble chat-title="DFCC Compliance Bot101"></df-messenger-chat-bubble>
+        </df-messenger>
+    </div>
 </body>
 </html>
